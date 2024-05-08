@@ -20,7 +20,7 @@ function includeHeader() {
             buttons.forEach(button => {
                 button.addEventListener('click', () => {
                     const page = button.getAttribute('data-page');
-                    goToPage(page);
+                    goToPage("recycle" + page);
                 });
             });
         })
