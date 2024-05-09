@@ -97,7 +97,7 @@ body {
     transition: 700ms ease;
     font-variation-settings: "wght" 311;
     margin-bottom: 0.8rem;
-    color: PaleGoldenRod;
+    color: rgb(0,250,154);
     outline: none;
     text-align: center;
     padding-bottom: 50px;
@@ -196,6 +196,7 @@ h3 {
 }
 
 
+
 #userInput {
     padding: 8px;
     border: 1px solid #ccc;
@@ -215,4 +216,99 @@ h3 {
 }
 
 
+.image-wrapper {
+    width: 600px;
+    height: 400px;
+    position: relative;
+    z-index: 1;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    
+    /*overflow: hidden;  Ensure content stays within rounded corners */
+}
+
+.image-wrapper img {
+    position: absolute;
+
+    transform-origin: left;
+
+}
+
+.image-1 {
+  clip-path: polygon(0 0, 0 32%, 28% 0);
+  transform: translate(-10px, -10px);
+  transition: transform 300ms ease;
+  transform-origin: top;
+  border-radius: 50px; /* Adjust the value as needed */
+  .image-wrapper:hover & {
+    transform: translate(0,0);
+    
+  }
+}
+
+.image-2 {
+  clip-path: polygon(28% 0, 0 32%, 0 100%, 17% 100%, 90% 0);
+  transform: translate(-30px, 5px);
+  transition: transform 300ms ease;
+  border-radius: 50px; /* Adjust the value as needed */
+  .image-wrapper:hover & {
+    transform: translate(0,0);
+  }
+}
+
+.image-3 {
+  clip-path: polygon(100% 0, 100% 65%, 74% 100%, 17% 100%, 90% 0);
+  transform: translate(-15px, -10px);
+  transition: transform 300ms ease;
+  border-radius: 50px; /* Adjust the value as needed */
+  .image-wrapper:hover & {
+    transform: translate(0,0);
+  }
+}
+
+.image-4 {
+  clip-path: polygon(100% 65%, 74% 100%, 100% 100%);
+  transform: translate(-32px, 5px);
+  transition: transform 300ms ease;
+  border-radius: 50px; /* Adjust the value as needed */
+  transform-origin: top;
+  .image-wrapper:hover & {
+    transform: translate(0,0);
+  }
+}
+
+.container1 {
+    float: left;
+}
+
+.myImage {
+    float: right;
+    width: 600px;
+    height: 400px;
+    font-family: Veranda;
+    
+  }
+
+.heading {
+    
+    float: left;
+}
+
+
+.content {
+    margin: 20px;
+}
+
+.text-with-image {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    max-width: 100%;
+}
+
+.text-with-image img {
+    margin-right: 20px; /* Add some spacing between text and image */
+    max-width: 50%; /* Ensure image does not exceed container width */
+}
 

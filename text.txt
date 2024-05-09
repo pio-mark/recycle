@@ -77,3 +77,44 @@ odpadami.
 ciągu dnia wyprodukuje więcej 1kg śmieci dziennie
 10. W Indiach w mieście Ghazipur znajduje się wysypisko śmieci o wielkości 40 boisk
 piłkarskich
+
+
+<!-- header.html -->
+<header>
+    <div class="navbar">
+        <div class="box-1">
+            <div class="btn btn-one" data-page="/recycle/index.html">
+                <span>Recykling</span>
+            </div>
+            <div class="btn btn-one" data-page="/recycle/smietniki.html">
+                <span>Rodzaje śmietników</span>
+            </div>
+            <div class="btn btn-one" data-page="/recycle/wplyw.html">
+                <span>Wpływ recyklingu</span>
+            </div>
+            <div class="btn btn-one" data-page="/recycle/skutki.html">
+                <span>Skutki</span>
+            </div>
+            <div class="btn btn-one" data-page="/recycle/ciekawostki.html">
+                <span>Ciekawostki</span>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<h1>Rodzaje śmietników</h1>
+        <p>1. Pojemniki na papier i tekturę</p>
+        <p>2. Pojemniki na szkło</p>
+        <p>3. Pojemniki na plastik</p>
+        <p>4. Pojemniki na metale (np. aluminium)</p>
+        <p>5. Pojemniki na bioodpady (np. resztki jedzenia)</p>
+        <p>6. Pojemniki na odpady niebezpieczne (np. baterie, farby)</p>
+
+
+        <div class="img-wrap">
+        <img class="image-1" src="rec_bins.png" alt="Image">/>  
+        <img class="image-2" src="rec_bins.png" alt="Image">/>
+        <img class="image-3" src="rec_bins.png" alt="Image">/>
+        <img class="image-4" src="rec_bins.png" alt="Image">/>
+    </div>
